@@ -1,48 +1,58 @@
-# 🌿 Smart Irrigation System – Week 1
+# 🌿 Smart Irrigation System – Week 1 Milestone
 
-A static web-based dashboard that visualizes sensor data and provides basic irrigation advice using HTML, CSS, and JavaScript. This is the Week 1 milestone for the internship project.
+This is my Week 1 project submission for the **AICTE Shell Internship**. The project is a static web-based Smart Irrigation dashboard that uses sensor data from a CSV file to give basic irrigation suggestions.
 
 ---
 
 ## 📌 Project Overview
 
-The Smart Irrigation System is designed to help farmers monitor soil and environmental conditions and decide when irrigation is needed. In this Week 1 version, we're using simulated data from a CSV file to:
+The **Smart Irrigation System** helps monitor environmental conditions like soil moisture using sensor data. It aims to provide irrigation alerts based on real-time or historical data, promoting water efficiency and better crop health.
 
-- Display key sensor readings
-- Show irrigation advice based on average moisture
-- Lay the foundation for future integration with backend, ML, and real sensors
+In Week 1, I've built the frontend using HTML, CSS, and JavaScript to simulate and visualize sensor readings.
 
 ---
 
-## 🔧 Features Implemented (Week 1)
+## ✅ Week 1 Milestone - Improvisations Done
 
-✅ Static dashboard with sample sensor values  
-✅ Irrigation advice logic using average sensor data  
-✅ Clean and responsive UI design  
-✅ Ready for CSV integration and future Flask/ML upgrades
-
----
-
-## 📁 Project Structure
-
+- Set up the complete **GitHub repository**
+- Built a clean and responsive **HTML/CSS UI dashboard**
+- Simulated sensor readings using sample data from a real CSV file
+- Used **JavaScript logic** to calculate average moisture and show advice
+- Created a proper folder structure for future backend/ML integration
+- Uploaded the actual dataset (CSV with 2000 rows)
 
 ---
 
-## 📊 Dataset Used
+## 🗂️ Project Structure
 
-The dataset (`sensor_data.csv`) contains:
-
-- 20 sensor columns (`sensor_0` to `sensor_19`)
-- 3 output columns (`parcel_0`, `parcel_1`, `parcel_2`) indicating irrigation zones
-- 2000 total data entries (simulated)
-
-Only the first few sensors are used for display in this version.
 
 ---
 
-## 🚀 How to Run
+## 🧪 Dataset Info
 
-1. Clone this repository:
+- `sensor_0` to `sensor_19` → 20 sensor readings (simulated)
+- `parcel_0`, `parcel_1`, `parcel_2` → irrigation areas/zones
+- 2000 rows of data used from uploaded CSV file
+
+Only a few sensor values are shown in the frontend for Week 1 demo.
+
+---
+
+## 📊 Features Implemented
+
+- Display simulated sensor values in a clean table
+- Calculate average moisture from selected sensors
+- Show irrigation advice like:
+  - ✅ Moisture Sufficient
+  - 💧 Moisture Low
+  - 🚨 Very Dry Soil
+
+---
+
+## 🖥️ How to Run This Project
+
+1. Clone the repository:
    ```bash
-  
+   git clone https://github.com/BhawnaBhadana/Smart_irrigation_AICTE_Shell.git
+
 
