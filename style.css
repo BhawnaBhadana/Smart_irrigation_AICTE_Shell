@@ -1,0 +1,31 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #e9f5ec;
+  color: #2b2b2b;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2a7f62;
+}
+
+.sensor-section, .advice-section {
+  margin: 30px auto;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
