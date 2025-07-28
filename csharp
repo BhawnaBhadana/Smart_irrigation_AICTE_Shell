@@ -1,0 +1,23 @@
+
+---
+
+## 👩‍💻 Code Overview & Key Snippets
+
+### 1. `sensorController.js`
+
+Handles sensor reading, decision making, and data logging:
+
+```js
+// pseudocode example
+const fs = require('fs');
+const readSensor = require('./readSensor');
+
+async function pollSensors() {
+  const { temperature, humidity, moisture } = await readSensor();
+  const timestamp = new Date().toISOString();
+  const line = `${timestamp},${temperature},${humidity},${moisture}\n`;
+  fs.appendFileSync(`./logs/sensor_log_${timestamp.slice(0,10)}.csv`, line);
+
+  const pumpOn = moisture < SOIL_THRESHOLD;
+  return { temperature, humidity, moisture, pumpOn };
+}
